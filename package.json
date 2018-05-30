@@ -1,0 +1,28 @@
+{
+  "name": "hesiod",
+  "version": "0.0.0",
+  "description": "⚛️ An atomic design-structured React component library for blog sites.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest \"src/**/*.spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prometheas/hesiod.git"
+  },
+  "keywords": [
+    "blog",
+    "theme",
+    "atomic",
+    "design",
+    "react",
+    "component",
+    "library"
+  ],
+  "author": "John Lianoglou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prometheas/hesiod/issues"
+  },
+  "homepage": "https://github.com/prometheas/hesiod#readme"
+}
