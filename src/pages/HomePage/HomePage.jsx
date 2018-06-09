@@ -11,7 +11,7 @@ class HomePage extends React.Component {
           Some stuff
         </header>
         <div>
-          {data.posts ?
+          {data.posts && data.posts.length ?
             (
               <React.Fragment>
                 {data.posts.map(post => (

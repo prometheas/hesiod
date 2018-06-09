@@ -10,29 +10,30 @@ const { describe, it } = global;
 
 describe('HomePage', () => {
   it('should render post listing when it has posts', () => {
+    const posts = [
+      {
+        title: 'Foo',
+        author: 'John',
+        dates: {
+          published: '2018-05-02T14:42:22',
+        },
+      },
+    ];
+
     const wrapper = mount(
       <div>
         <HomePage
           data={{
-            posts: [
-              {
-                title: 'Foo',
-                author: 'John',
-                dates: {
-                  published: '2018-05-02T14:42:22',
-                },
-              },
-            ],
+            posts,
           }}
         />
       </div>
     );
 
-    expect(false).to.be.true;
-    expect(wrapper.find('article').count).to.equal(1);
+    expect(wrapper.find('article').length).to.equal(posts.length);
   });
 
-  it('should apologize when it has no posts', () => {
+  it('should report when it has no posts', () => {
     const wrapper = shallow(
       <HomePage
         data={{
@@ -41,6 +42,6 @@ describe('HomePage', () => {
       />
     );
 
-    expect(wrapper.text()).to.match(/afraid/);
+    expect(wrapper.text()).to.match(/No posts/);
   });
 });
