@@ -7,6 +7,6 @@ import HomePage from './HomePage';
 storiesOf('HomePage', module)
   .add('home', () => (
     <HomePage
-      data={require('../../styleguide/data/pages/HomePage-1')}
+      data={require('./HomePage.data')}
     />
   ));
