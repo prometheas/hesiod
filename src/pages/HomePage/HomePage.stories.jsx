@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import HomePage from './HomePage';
 
-storiesOf('HomePage', module)
+storiesOf('Pages/HomePage', module)
   .add('home', () => (
     <HomePage
       data={require('./HomePage.data')}
